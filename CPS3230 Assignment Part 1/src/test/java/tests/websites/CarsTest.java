@@ -52,11 +52,11 @@ public class CarsTest {
     }
 
     @Test
-    public void testBoatsAlertType() throws Exception{
+    public void testCarsAlertType() throws Exception{
         Assertions.assertEquals(AlertTypes.CarType,cars.getAlertType() );
     }
     @Test
-    public void testAlertTypeIsBoats() throws Exception{
+    public void testAlertTypeIsCars() throws Exception{
         //Setup
         AlertTypeProvider alertTypeProvider = Mockito.mock(AlertTypeProvider.class);
         Mockito.when(alertTypeProvider.getAlertSection()).thenReturn(AlertTypeProvider.CARS);
